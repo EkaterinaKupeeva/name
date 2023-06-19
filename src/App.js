@@ -40,6 +40,7 @@ function App() {
       </div>
       <div className="col-9">
         <Routes>
+          <Browser></Browser>
           <Route path="/profile" element={<Profile/>}/>
         </Routes>
       </div>
