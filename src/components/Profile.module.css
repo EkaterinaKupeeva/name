@@ -1,0 +1,13 @@
+.id {
+    font-weight: 700;
+    color: rgb(223, 63, 63);
+}
+.id span {
+    color: rgb(144, 23, 23);
+}
+.name {
+    font-weight: 900;
+}
+.name span {
+    font-size: italic;
+}
