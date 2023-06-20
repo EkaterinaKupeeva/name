@@ -6,7 +6,8 @@ import { Settings } from "./components/Settings";
 import { Friends } from "./components/Friends";
 
 
-function App() {
+function App(props) {
+  console.log(props)
   return (
     <div className="container mt-5">
       <div className="row">
@@ -28,7 +29,7 @@ function App() {
         </div>
         <div className="col-9">
           <Routes>
-            <Route path="/profile" element={<Profile />} />
+            <Route path="/profile" element={<Profile function={props.function}/>} />
             <Route path="/massages" element={<Massages />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/friends" element={<Friends />} />

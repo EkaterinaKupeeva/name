@@ -1,6 +1,8 @@
-//import styles from "./Profile.module.css";
+import styles from './Profile.module.css';
 
-export const Profile = () => {
+export const Profile = (props) => {
+    let user = props.function (); 
+    console.log(user);
     return (
         <div className="row">
             <div className="col-md-4">
@@ -8,10 +10,10 @@ export const Profile = () => {
                 width="100%"/>
             </div>
             <div className="col-md-8">
-                <h2 className="{styles.id}">ID: <span>2</span></h2>
-                <h2 className="{styles.name}">Фамилия и имя: <span>Марина Рябинова</span></h2>
-                <h2>E-mail: <span>mary@ry.ru</span></h2>
-                <p>Небольшой текст о себе</p>
+                <h2 className="{styles.id}">ID: <span>{user.id}</span></h2>
+                <h2 className="{styles.name}">Фамилия и имя: <span>{user.name} {user.lastname}</span></h2>
+                <h2>E-mail: <span>{user.email}</span></h2>
+                <p>{user.about}</p>
             </div>
         </div>
     );
