@@ -5,9 +5,16 @@
 .id span {
     color: rgb(144, 23, 23);
 }
-.name {
+.name, .email{
     font-weight: 900;
+    color: rgb(88, 117, 232);
 }
-.name span {
-    font-size: italic;
+.name span, .email span {
+    color: rgba(176, 50, 138, 0.674);
+    font-style: italic;
+}
+
+.p {
+    color: blueviolet;
+    font-style: italic;
 }

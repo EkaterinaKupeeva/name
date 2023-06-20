@@ -7,7 +7,6 @@ import { Friends } from "./components/Friends";
 
 
 function App(props) {
-  console.log(props)
   return (
     <div className="container mt-5">
       <div className="row">
@@ -29,10 +28,10 @@ function App(props) {
         </div>
         <div className="col-9">
           <Routes>
-            <Route path="/profile" element={<Profile function={props.function}/>} />
+            <Route path="/profile" element={<Profile function={props.function.key_getUser}/>} />
             <Route path="/massages" element={<Massages />} />
             <Route path="/settings" element={<Settings />} />
-            <Route path="/friends" element={<Friends />} />
+            <Route path="/friends" element={<Friends function={props.function.key_getUsers}/>} />
           </Routes>
         </div>
       </div>
